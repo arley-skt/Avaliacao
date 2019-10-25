@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.902
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContaApi", "ContaApi\ContaApi.csproj", "{15154EC1-30CD-476C-AFF8-A8FA64C0784D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{69A78866-8685-4D5C-8083-6D10CD597012}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conta.Domain", "Conta.Domain\Conta.Domain.csproj", "{CBD56C1B-C444-44D3-B2A9-55483966480B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15154EC1-30CD-476C-AFF8-A8FA64C0784D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15154EC1-30CD-476C-AFF8-A8FA64C0784D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15154EC1-30CD-476C-AFF8-A8FA64C0784D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15154EC1-30CD-476C-AFF8-A8FA64C0784D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD56C1B-C444-44D3-B2A9-55483966480B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD56C1B-C444-44D3-B2A9-55483966480B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD56C1B-C444-44D3-B2A9-55483966480B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD56C1B-C444-44D3-B2A9-55483966480B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15154EC1-30CD-476C-AFF8-A8FA64C0784D} = {69A78866-8685-4D5C-8083-6D10CD597012}
+		{CBD56C1B-C444-44D3-B2A9-55483966480B} = {69A78866-8685-4D5C-8083-6D10CD597012}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B54A2FEB-CAB8-4B0B-9E9D-6D449F87793A}
+	EndGlobalSection
+EndGlobal
