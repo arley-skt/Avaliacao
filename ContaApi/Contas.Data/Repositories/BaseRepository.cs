@@ -22,6 +22,8 @@ namespace Contas.Data.Repositories
         }
 
         public void Save(T entity) => dbSet.Add(entity);//.Context.SaveChanges();
+
+        public void SaveMany(IEnumerable<T> entity) => dbSet.AddRange(entity);
         public async Task<T> GetById(int id) => await dbSet.FindAsync(id);
     }
 }

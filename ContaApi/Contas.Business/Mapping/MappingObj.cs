@@ -11,7 +11,7 @@ namespace Contas.Business.Mapping
     {
         public MappingObj()
         {
-            CreateMap<Lancamento, LancamentoDto>()
+            CreateMap<LancamentoDto,Lancamento>()
             .ReverseMap();
 
             CreateMap<Conta, ContaDto>()

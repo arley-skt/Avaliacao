@@ -4,6 +4,8 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using AutoMapper;
+using Contas.Business.Mapping;
 
 namespace Contas.Business.Injetor
 {
@@ -11,7 +13,9 @@ namespace Contas.Business.Injetor
     {
         public static void Add(IServiceCollection services)
         {
-            services.AddScoped<ILancamentoService, LancamentoService>();           
+            services.AddScoped<ILancamentoService, LancamentoService>(); 
+            services.AddScoped<IMensagemService, MensagemService>();
+            services.AddAutoMapper(typeof(MappingObj));
 
         }
     }

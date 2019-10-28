@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Contas.Business.Injetor;
+using Contas.Business.Mapping;
 using Contas.Data.Context;
 using Contas.Data.Injetor;
 using Microsoft.AspNetCore.Builder;
@@ -14,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+//using AutoMapper.ex
 
 namespace ContaApi
 {
@@ -30,6 +33,7 @@ namespace ContaApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddAutoMapper(typeof(MappingObj));
             RepositoryInjetor.Add(services);
             InjetorServices.Add(services);
 
